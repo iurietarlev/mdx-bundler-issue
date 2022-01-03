@@ -32,7 +32,7 @@ export const getSinglePost = async (slug: string) => {
     esbuildOptions(options) {
       // https://github.com/kentcdodds/mdx-bundler/issues/100
       options.platform = 'node'
-      // options.target = ['esnext']
+      options.target = ['es6']
       return options
     },
   })
